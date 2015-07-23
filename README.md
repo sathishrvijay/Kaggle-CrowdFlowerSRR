@@ -3,6 +3,9 @@
 ### Final Standing
 - 428/1326 (top 3rd) in private leaderboard
 
+### Problem Statement
+- The goal of this competition was to look at search query for a product and the result shown and rank the result on a scale of 1-4 based on relevance to the query. The train and test data included the query phrase, product title and uncleaned description. The training data additional had a search relevance rating. 
+- Hence, it boils down to a text mining challenge with supervised classification
 
 ### Files 
 - classifier.py - Truncated SVD + SVM classifier prediction models
