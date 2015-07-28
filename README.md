@@ -41,9 +41,12 @@
 - Randomized PCA, Non Negative Matrix Factorization did not work instead of SVD since they don't work on sparse input features
 - Restricted Boltzmann Machines was attempted for Dimensionality Reduction, but it looked like it was way too slow and performance was really poor compared to SVD
 
-### Could have tried
+### Could have tried / Winning solutions
 - Using Ordinal classifiers that take ranking into consideration might have improved performance over vanilla classifiers
-- Didn't know enough Text Mining theory to try advanced techniques and toolkits for this competition
+- According to winners' solution, the correlation or distance between the search query and product title/description turned out to be among the most useful features. This included metrics like Jaccard coefficients, dice distance, intersect word counts etc.
+- Data cleaning to correct spelling mistakes and replace with synonyms etc. (Non-trivial effort to do this)
+- Turns out that using Gradient Boosting Regressor with linear booster as opposed to a Classifier was actually one of the strongest predictor model with a simple objective function like MSE as opposed to weighted Kappa scoring specified in the competition.
+- Another key insight was to use the Cumulative Distributive Function to find percentage of results ranked 1, 2, 3 and 4 in training set. Then, in the predictions, the winner first generated ranking predictions and then used CDF percentages of the training set to convert ranking predictions to ratings from 1 to 4 which worked really well!
  
 
 
