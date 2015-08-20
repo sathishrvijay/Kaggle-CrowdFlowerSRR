@@ -1,4 +1,4 @@
-# Kaggle-CrowdFlowerSRR
+# Kaggle - Crowd Flower Search Results Relevance competition
 
 ### Final Standing
 - 428/1326 (top 3rd) in private leaderboard
